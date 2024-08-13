@@ -24,12 +24,12 @@ app.use(methodOverride(function (req, res) {
 let todolist = [];
 
 /* The to do list and the form are displayed */
-// app.get('/todo', function (req, res) {
-//         res.render('todo.ejs', {
-//             todolist,
-//             clickHandler: "func1();"
-//         });
-//     })
+ app.get('/todo', function (req, res) {
+         res.render('todo.ejs', {
+             todolist,
+             clickHandler: "func1();"
+         });
+     })
 
     /* Adding an item to the to do list */
     .post('/todo/add/', function (req, res) {
