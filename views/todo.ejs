@@ -19,6 +19,12 @@
                 text-align: center;
             }
 
+            .jenkins-logo {
+                display: block;
+                margin: 20px auto;
+                width: 150px;
+            }
+
             ul {
                 list-style: none;
                 padding: 0;
@@ -90,6 +96,10 @@
 
     <body>
         <h1>Todo List</h1>
+
+        <!-- Jenkins Image from the Web -->
+        <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins Logo" class="jenkins-logo">
+
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
